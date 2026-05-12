@@ -1,0 +1,179 @@
+/* ------------------------------------------------------------------ */
+/* Hero — overrides style.css two-column layout                        */
+/* ------------------------------------------------------------------ */
+
+.hero {
+    padding: 4rem 2rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* Badge */
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(26, 71, 42, 0.18);
+    margin-bottom: 1.25rem;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+}
+
+/* Title */
+
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    letter-spacing: -0.025em;
+    margin-bottom: 0;
+}
+
+.hero-title-accent {
+    color: var(--accent);
+    font-style: normal;
+}
+
+/* Subtitle */
+
+.hero-subtitle {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+
+.hero-actions {
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* Mock browser card                                                   */
+/* ------------------------------------------------------------------ */
+
+.mock-browser {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 48px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.mock-browser-bar {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--border-soft);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--paper);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-red    { background: #ff5f57; }
+.dot-yellow { background: #febc2e; }
+.dot-green-btn { background: #28c840; }
+
+.mock-browser-body { padding: 1.25rem; }
+
+/* Stat tiles */
+
+.mock-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.mock-stat {
+    padding: 0.85rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    border-right: 1px solid var(--border-soft);
+}
+
+.mock-stat:last-child { border-right: none; }
+
+.mock-stat-label {
+    font-size: 0.7rem;
+    color: var(--ink-faint);
+    font-weight: 500;
+}
+
+.mock-stat-value {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.15;
+    font-family: var(--font-body);
+}
+
+.mock-stat-plain { font-family: var(--font-body); }
+
+.mock-stat-change {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.mock-stat-sub {
+    font-size: 0.7rem;
+    color: var(--ink-faint);
+}
+
+/* Bars — override two-column style.css grid */
+
+.mock-bar-row {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.8rem;
+}
+
+.mock-bar-row:last-child { margin-bottom: 0; }
+
+.mock-bar-track {
+    height: 8px;
+    background: #eeebe4;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.mock-bar {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.5s ease;
+}
+
+.mock-bar-orange { background: #e8a030; }
+.mock-bar-blue   { background: #4a90d9; }
+.mock-bar-purple { background: #8b72be; }
